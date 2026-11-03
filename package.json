@@ -1,0 +1,22 @@
+{
+  "name": "complaint-hub",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Sistem Digital Penerimaan Keluhan Teknis dan Fisik Produk (Satoria Pharma)",
+  "scripts": {
+    "install:all": "npm install && npm --prefix frontend install && npm --prefix functions install",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "emulators": "firebase emulators:start",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "firebase-tools": "^14.0.0",
+    "globals": "^15.0.0",
+    "prettier": "^3.0.0"
+  }
+}

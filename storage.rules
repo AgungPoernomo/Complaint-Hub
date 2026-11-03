@@ -1,0 +1,11 @@
+rules_version = '2';
+
+// Fase 0: tolak semua akses klien. Aturan lampiran dibuat di fase berikutnya.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}
+

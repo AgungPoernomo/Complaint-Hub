@@ -1,0 +1,12 @@
+rules_version = '2';
+
+// Fase 0: tolak semua akses klien. Aturan per role dibuat di Fase 1-6.
+// Semua penulisan data keluhan nantinya lewat backend (Admin SDK).
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+

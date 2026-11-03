@@ -1,0 +1,8 @@
+node_modules
+frontend/dist
+functions/lib
+.firebase
+package-lock.json
+README.md
+docs
+

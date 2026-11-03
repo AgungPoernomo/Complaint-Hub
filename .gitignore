@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+frontend/dist/
+functions/lib/
+
+# Secrets (JANGAN di-commit)
+.env
+.env.*
+!.env.example
+serviceAccount*.json
+*-firebase-adminsdk-*.json
+
+# Firebase
+.firebase/
+firebase-debug.log*
+firebase-debug.*.log
+ui-debug.log
+*.log
+emulator-data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
